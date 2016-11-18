@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .col-xs-12
+      h1 Please select a Product type
+      .row
+        .col-xs-6
+          h4 These are our finest Coffee Machines
+          p 
+            a.btn.btn-default(href="/machines") Machines
+        .col-xs-6
+          h4 And our most flavorful Coffee Pods
+          p
+            a.btn.btn-default(href="/pods") Pods

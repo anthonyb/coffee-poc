@@ -3,20 +3,22 @@
 const mongoose = require('mongoose');
 const connection = mongoose.connection;
 
-
 const Promise = require('promise');
 
 const ProductType = require('../models/product_type');
+const PackSize = require('../models/pack_size');
 const Flavor = require('../models/flavor');
 const Pod = require('../models/pod');
 const Machine = require('../models/machine');
 
 const product_types_fixtures = require('../fixtures/product_types');
+const pack_size_fixtures = require('../fixtures/pack_sizes');
 const flavors_fixtures = require('../fixtures/flavors');
 const pods_fixtures = require('../fixtures/pods');
 const machines_fixtures = require('../fixtures/machines');
 
 const product_type_hash = {};
+const pack_size_hash = {};
 const flavors_hash = {};
 
 //NOTICE: This will destroy all objects and then rebuild them!
@@ -25,6 +27,7 @@ connection.on('error', console.error);
 connection.once('open', () => {
   console.log("Ready!");
   createProductTypes()
+    .then(createPackSizes())
     .then(createFlavors())
     .then(createPods())
     .then(createMachines())
@@ -39,9 +42,25 @@ function createProductTypes(){
     for(let type of product_types_fixtures){
       let newType = new ProductType({title:type});
       newType.save();
-      product_type_hash[(type.toLowerCase())] = newType;
+      product_type_hash[type.toLowerCase()] = newType;
 
       console.log(`Created Product Type :: ${newType}`);
+    }
+    resolve();
+  });
+}
+
+function createPackSizes(){
+  //first flush
+  PackSize.remove({},()=>{});
+
+  return new Promise((resolve, reject) => {
+    for(let size of pack_size_fixtures){
+      let newSize = new PackSize({size:size});
+      newSize.save();
+      pack_size_hash[size] = newSize;
+
+      console.log(`Created Pack Size :: ${newSize}`);
     }
     resolve();
   });
@@ -55,7 +74,7 @@ function createFlavors(){
     for(let flavor of flavors_fixtures){
       let newFlavor = new Flavor({title:flavor});
       newFlavor.save();
-      flavors_hash[(flavor.toLowerCase())] = newFlavor;
+      flavors_hash[flavor.toLowerCase()] = newFlavor;
 
       console.log(`Created Flavor :: ${newFlavor}`);
     }
@@ -73,9 +92,10 @@ function createPods(){
         {
           sku: pod.sku,
           title: pod.title,
-          product_type: product_type_hash[(pod.product_type.toLowerCase())],
+          product_type: product_type_hash[pod.product_type.toLowerCase()],
           size: pod.size,
-          flavor: flavors_hash[(pod.flavor.toLowerCase())]
+          pack_size: pack_size_hash[pod.size],
+          flavor: flavors_hash[pod.flavor.toLowerCase()]
         }
       );
       newPod.save();
@@ -96,7 +116,7 @@ function createMachines(){
         {
           sku: machine.sku,
           title: machine.title,
-          product_type: product_type_hash[(machine.product_type.toLowerCase())],
+          product_type: product_type_hash[machine.product_type.toLowerCase()],
           model: machine.model,
           water_line_compatible: machine.water_line_compatible
         }

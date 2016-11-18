@@ -5,6 +5,4 @@ const productTypeSchema = new Schema({
   title:  String
 });
 
-const ProductType = mongoose.model('ProductType', productTypeSchema);
-
-module.exports = ProductType;
+module.exports = mongoose.model('ProductType', productTypeSchema);

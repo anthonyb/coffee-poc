@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+
+  .row
+    .col-xs-12
+      h1 Please select a Machine type
+      .row
+        - each type in product_types
+          .col-xs-4
+            h4 #{type.title}
+            p Here is some text to describe the #{type.title} Machine
+            p
+              a.btn.btn-default(href="/machines/type/" + type._id) Detail
+      .row
+        .col-xs-4
+          h4 Water Line Compatible
+          p These ones are water line compatible 
+          p
+            a.btn.btn-default(href="/machines/waterline/") Detail

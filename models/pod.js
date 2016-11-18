@@ -6,9 +6,8 @@ const podSchema = new Schema({
   sku: String,
   product_type: { type: Schema.Types.ObjectId, ref: 'ProductType' },
   flavor: { type: Schema.Types.ObjectId, ref: 'Flavor' },
-  size: Number
+  pack_size: { type: Schema.Types.ObjectId, ref: 'PackSize' },
+  size: Number //caching this size here
 });
 
-const Pod = mongoose.model('Pod', podSchema);
-
-module.exports = Pod;
+module.exports = mongoose.model('Pod', podSchema);
