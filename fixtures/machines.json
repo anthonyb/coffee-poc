@@ -1,0 +1,65 @@
+[
+  {
+    "sku":"CM001",
+    "product_type": "small",
+    "title": "CM001 – small machine, base model",
+    "model": "base",
+    "water_line_compatible": false
+  },
+  {
+    "sku":"CM002",
+    "product_type": "small",
+    "title": "CM002 – small machine, premium model",
+    "model": "premium",
+    "water_line_compatible": false
+  },
+  {
+    "sku":"CM003",
+    "product_type": "small",
+    "title": "CM003 – small machine, deluxe model, water line compatible",
+    "model": "deluxe",
+    "water_line_compatible": true
+  },
+  {
+    "sku":"CM101",
+    "product_type": "large",
+    "title": "CM101 – large machine, base model",
+    "model": "base",
+    "water_line_compatible": false
+  },
+  {
+    "sku":"CM102",
+    "product_type": "large",
+    "title": "CM102 – large machine, premium model, water line compatible",
+    "model": "premium",
+    "water_line_compatible": true
+  },
+  {
+    "sku":"CM103",
+    "product_type": "large",
+    "title": "CM103 – large machine, deluxe model, water line compatible",
+    "model": "deluxe",
+    "water_line_compatible": true
+  },
+  {
+    "sku":"EM001",
+    "product_type": "espresso",
+    "title": "EM001 – espresso machine, base model",
+    "model": "base",
+    "water_line_compatible": false
+  },
+  {
+    "sku":"EM002",
+    "product_type": "espresso",
+    "title": "EM002 – espresso machine, premium model",
+    "model": "premium",
+    "water_line_compatible": false
+  },
+  {
+    "sku":"EM003",
+    "product_type": "espresso",
+    "title": "EM003 – espresso machine, deluxe model, water line compatible",
+    "model": "deluxe",
+    "water_line_compatible": true
+  }
+]

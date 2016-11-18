@@ -1,0 +1,184 @@
+[
+  {
+    "sku":"CP001",
+    "product_type": "small",
+    "title": "CP001 – small coffee pod, 1 dozen, vanilla",
+    "size": 1,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"CP003",
+    "product_type": "small",
+    "title": "CP003 – small coffee pod, 3 dozen, vanilla",
+    "size": 3,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"CP011",
+    "product_type": "small",
+    "title": "CP011 – small coffee pod, 1 dozen, caramel",
+    "size": 1,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"CP013",
+    "product_type": "small",
+    "title": "CP013 – small coffee pod, 3 dozen, caramel",
+    "size": 3,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"CP021",
+    "product_type": "small",
+    "title": "CP021 – small coffee pod, 1 dozen, psl",
+    "size": 1,
+    "flavor": "psl"
+  },
+  {
+    "sku":"CP023",
+    "product_type": "small",
+    "title": "CP023 – small coffee pod, 3 dozen, psl",
+    "size": 3,
+    "flavor": "psl"
+  },
+  {
+    "sku":"CP031",
+    "product_type": "small",
+    "title": "CP031 – small coffee pod, 1 dozen, mocha",
+    "size": 1,
+    "flavor": "mocha"
+  },
+  {
+    "sku":"CP033",
+    "product_type": "small",
+    "title": "CP033 – small coffee pod, 3 dozen, mocha",
+    "size": 3,
+    "flavor": "mocha"
+  },
+  {
+    "sku":"CP041",
+    "product_type": "small",
+    "title": "CP041 – small coffee pod, 1 dozen, hazelnut",
+    "size": 1,
+    "flavor": "hazelnut"
+  },
+  {
+    "sku":"CP043",
+    "product_type": "small",
+    "title": "CP043 – small coffee pod, 3 dozen, hazelnut",
+    "size": 3,
+    "flavor": "hazelnut"
+  },
+  {
+    "sku":"CP101",
+    "product_type": "large",
+    "title": "CP101 - large coffee pod, 1 dozen, vanilla",
+    "size": 1,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"CP103",
+    "product_type": "large",
+    "title": "CP103 – large coffee pod, 3 dozen, vanilla",
+    "size": 3,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"CP111",
+    "product_type": "large",
+    "title": "CP111 – large coffee pod, 1 dozen, caramel",
+    "size": 1,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"CP113",
+    "product_type": "large",
+    "title": "CP113 – large coffee pod, 3 dozen, caramel",
+    "size": 3,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"CP121",
+    "product_type": "large",
+    "title": "CP121 – large coffee pod, 1 dozen, psl",
+    "size": 1,
+    "flavor": "psl"
+  },
+  {
+    "sku":"CP123",
+    "product_type": "large",
+    "title": "CP123 – large coffee pod, 3 dozen, psl",
+    "size": 3,
+    "flavor": "psl"
+  },
+  {
+    "sku":"CP131",
+    "product_type": "large",
+    "title": "CP131 – large coffee pod, 1 dozen, mocha",
+    "size": 1,
+    "flavor": "mocha"
+  },
+  {
+    "sku":"CP133",
+    "product_type": "large",
+    "title": "CP133 – large coffee pod, 3 dozen, mocha",
+    "size": 3,
+    "flavor": "mocha"
+  },
+  {
+    "sku":"CP141",
+    "product_type": "large",
+    "title": "CP141 – large coffee pod, 1 dozen, hazelnut",
+    "size": 1,
+    "flavor": "hazelnut"
+  },
+  {
+    "sku":"CP143",
+    "product_type": "large",
+    "title": "CP143 – large coffee pod, 3 dozen, hazelnut",
+    "size": 3,
+    "flavor": "hazelnut"
+  },
+  {
+    "sku":"EP003",
+    "product_type": "espresso",
+    "title": "EP003 – espresso pod, 3 dozen, vanilla",
+    "size": 3,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"EP005",
+    "product_type": "espresso",
+    "title": "EP005 – espresso pod, 5 dozen, vanilla",
+    "size": 5,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"EP007",
+    "product_type": "espresso",
+    "title": "EP007 – espresso pod, 7 dozen, vanilla",
+    "size": 7,
+    "flavor": "vanilla"
+  },
+  {
+    "sku":"EP013",
+    "product_type": "espresso",
+    "title": "EP013 – espresso pod, 3 dozen, caramel",
+    "size": 3,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"EP015",
+    "product_type": "espresso",
+    "title": "EP015 – espresso pod, 5 dozen, caramel",
+    "size": 5,
+    "flavor": "caramel"
+  },
+  {
+    "sku":"EP017",
+    "product_type": "espresso",
+    "title": "EP017 – espresso pod, 7 dozen, caramel",
+    "size": 7,
+    "flavor": "caramel"
+  }
+]
