@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/coffee-challenge');
+
 var app = express();
 
 // view engine setup
