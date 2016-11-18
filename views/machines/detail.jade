@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+
+  .row
+    .col-xs-12
+      h1 Here are the Coffee Machines!
+      
+      .row
+        h2 Please try the following flavors
+        - each pod in related_objects
+          .col-xs-6
+            h4 #{pod.title}
+            p Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+            p
+              a.btn.btn-default(href="/pods/" + pod._id) Detail

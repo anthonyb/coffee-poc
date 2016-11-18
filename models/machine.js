@@ -9,6 +9,4 @@ const machineSchema = new Schema({
   water_line_compatible: Boolean
 });
 
-const Machine = mongoose.model('Machine', machineSchema);
-
-module.exports = Machine;
+module.exports = mongoose.model('Machine', machineSchema);
